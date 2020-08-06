@@ -339,6 +339,6 @@ function progressCircle() {
 		navbar.style.position = "absolute";
 	}
 	}
-	window.addEventListener('scroll', scrollsmooth)
+	//window.addEventListener('scroll', scrollsmooth)
 })(jQuery);
 

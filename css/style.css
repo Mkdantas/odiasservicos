@@ -251,22 +251,34 @@ ul {
 	display: none;
 }
 
+header{
+	height:200px;
+}
 .addresstop{
 	font-size: 15px;
-	height:20px;
+	height:40px;
 	width:100%;
 	background: #379533;	
 	color: white;
+	grid-area:toprow;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	padding-left:5%;
 
 }
 
+
 .header-section {
-	position: absolute;
-	top: 0;
+	display:grid;
+	grid-template-areas: 
+	"toprow toprow toprow toprow toprow" 
+	"logo logo logo logo menulist"; 
+	top: 0; 
 	left: 0;
 	width: 100%;
 	z-index: 999;
-	padding: 0 50px;
+	padding: 0;
 	background: white;
 	-webkit-transition: all 0.4s ease 0s;
 	-o-transition: all 0.4s ease 0s;
@@ -276,21 +288,26 @@ ul {
 }
 
 .header-section .logo {
-	display: inline-block;
-	float: left;
-	padding-top: 10px;
+	padding-left: 6rem;
+	grid-area: logo;
 }
 
 .header-section .logo img {
-	width: 200px;
+	width: 160px;
 	-webkit-transition: all 0.4s ease 0s;
 	-o-transition: all 0.4s ease 0s;
 	transition: all 0.4s ease 0s;
 }
 
-.header-section .menu-list {
-	list-style: none;
-	float: right;
+.header-section nav {
+	grid-area: menulist;
+	display:flex;
+	align-items:center;
+	
+}
+.header-section .menu-list{
+	display: flex;
+	align-items:center;
 }
 
 .header-section .menu-list li {
@@ -299,7 +316,7 @@ ul {
 
 .header-section .menu-list li a {
 	display: inline-block;
-	padding: 35px 15px;
+	padding: 20px 15px;
 	margin-right: 15px;
 	color: #222;
 	position: relative;
@@ -1611,6 +1628,21 @@ ul {
 	.test-overlay {
 		display: none;
 	}
+	.header-section .menu-list {
+		display: none;
+		float: none;
+		clear: both;
+		border-top: 1px solid #ddd;
+	}
+	.responsive {
+		display: block;
+		color: #333;
+		font-size: 34px;
+		position: absolute;
+		right: 30px;
+		padding-top: 40px;
+		
+	}
 	#clientes-slide .owl-dots, #fornecedores-slides .owl-dots {
 		top: 95%;
 		-webkit-transform: rotate(-90deg);
@@ -1622,6 +1654,7 @@ ul {
 		left: 50%;
 		margin-left: -4px;
 	}
+	
 	.card-section {
 		padding-bottom: 0;
 	}
@@ -1666,6 +1699,7 @@ ul {
 	.header-section .logo {
 		padding-top: 20px;
 		padding-bottom: 20px;
+		padding-left: 10px;
 	}
 	.header-section .menu-list {
 		display: none;
@@ -1697,7 +1731,7 @@ ul {
 		font-size: 34px;
 		position: absolute;
 		right: 30px;
-		padding-top: 10px;
+		padding-top: 40px;
 	}
 	.owl-carousel .owl-nav .owl-prev,
 	.owl-carousel .owl-nav .owl-next {
@@ -1827,3 +1861,30 @@ html{
 		height: 350px;
 	}
 }
+
+.social-icon img{
+	height:30px;
+	width: 30px;
+	margin-right:10px;
+
+}
+
+.social-icon {
+	text-decoration:none;
+	color:white;
+	font-size:15px;
+	margin-left:50px;
+	display:flex;
+	align-items:center;
+	height:100%;
+	transition: ease-in 0.2s;
+	
+}
+.social-icons {
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	height:40px;
+	margin-left:40px;
+}
+
