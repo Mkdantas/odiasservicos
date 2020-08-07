@@ -1,3 +1,4 @@
+
 /* =================================
 ------------------------------------
 	Labs - Design Studio
@@ -259,21 +260,71 @@ header{
 	height:40px;
 	width:100%;
 	background: #379533;	
-	color: white;
 	grid-area:toprow;
 	display: flex;
-	justify-content: start;
+	justify-content: center;
 	align-items: center;
-	padding-left:5%;
+	color: rgb(224, 224, 224);
+	font-family: 'Roboto', sans-serif;
 
 }
+
+.addressbottom{
+	font-size: 15px;
+	height:40px;
+	width:100%;
+	grid-area: bottomrow;
+	z-index: 9999;
+	background: #379533;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	color: rgb(224, 224, 224);
+	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+}
+
+.addressbottom span{	
+	margin-right:20px;
+	font-family: 'Roboto', sans-serif;
+	
+}
+.social-icon img{
+	height:20px;
+	width: 20px;
+	margin-right:10px;
+
+
+}
+
+.social-icon {
+	text-decoration:none;
+	color: rgb(224, 224, 224);
+	font-size:15px;
+	align-items:center;
+	display:flex;
+	height:100%;
+	transition: ease-in 0.2s;
+	margin-right:20px;
+	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+	
+}
+.social-icons {
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	height:40px;
+}
+
 
 
 .header-section {
 	display:grid;
 	grid-template-areas: 
 	"toprow toprow toprow toprow toprow" 
-	"logo logo logo logo menulist"; 
+	"logo logo logo logo menulist"
+	"bottomrow bottomrow bottomrow bottomrow bottomrow"; 
 	top: 0; 
 	left: 0;
 	width: 100%;
@@ -288,8 +339,10 @@ header{
 }
 
 .header-section .logo {
-	padding-left: 6rem;
+	padding-left: 8rem;
 	grid-area: logo;
+	align-items: end;
+	display:flex;
 }
 
 .header-section .logo img {
@@ -318,21 +371,25 @@ header{
 	display: inline-block;
 	padding: 20px 15px;
 	margin-right: 15px;
-	color: #222;
+	color: #5675b6;
 	position: relative;
 	font-family: "Roboto", sans-serif;
-	font-size: 15px;
+	font-size: 16px;
+	font-weight: 700;
 	letter-spacing: 0.09em;
-	-webkit-transition: all 0.4s ease 0s;
-	-o-transition: all 0.4s ease 0s;
-	transition: all 0.4s ease 0s;
+	transition: ease 0.5s;
 }
 
 .header-section .menu-list li a:hover,
 .header-section .menu-list li a.active {
 	
-	background:#379533;
-	color:white
+	background:none;
+	color:#379533;
+	border:15px solid #5675b6;
+	border-radius:50%;
+	height:130px;
+	display:flex;
+	align-items:center;
 }
 
 .header-section .menu-list li:last-child a {
@@ -340,8 +397,13 @@ header{
 }
 
 .header-section .menu-list li.active a {
-	background: #5775b3;
-	color: white;
+	background:none;
+	color:#379533;
+	border:15px solid #5675b6;
+	border-radius:50%;
+	height:130px;
+	display:flex;
+	align-items:center;
 }
 
 .header-section .menu-list .current a:after {
@@ -1602,6 +1664,7 @@ header{
 	#clientes-slide .owl-dots, #fornecedores-slides .owl-dots {
 		right: -25px;
 	}
+
 	.testlogos{
 		height:80px;
 		width: 40px;
@@ -1634,6 +1697,7 @@ header{
 		clear: both;
 		border-top: 1px solid #ddd;
 	}
+
 	.responsive {
 		display: block;
 		color: #333;
@@ -1642,6 +1706,9 @@ header{
 		right: 30px;
 		padding-top: 40px;
 		
+	}
+	.addresstop, .addressbottom{
+		display:none;
 	}
 	#clientes-slide .owl-dots, #fornecedores-slides .owl-dots {
 		top: 95%;
@@ -1732,6 +1799,9 @@ header{
 		position: absolute;
 		right: 30px;
 		padding-top: 40px;
+	}
+	.addresstop, .addressbottom{
+		display:none;
 	}
 	.owl-carousel .owl-nav .owl-prev,
 	.owl-carousel .owl-nav .owl-next {
@@ -1861,30 +1931,3 @@ html{
 		height: 350px;
 	}
 }
-
-.social-icon img{
-	height:30px;
-	width: 30px;
-	margin-right:10px;
-
-}
-
-.social-icon {
-	text-decoration:none;
-	color:white;
-	font-size:15px;
-	margin-left:50px;
-	display:flex;
-	align-items:center;
-	height:100%;
-	transition: ease-in 0.2s;
-	
-}
-.social-icons {
-	display:flex;
-	align-items:center;
-	justify-content: center;
-	height:40px;
-	margin-left:40px;
-}
-
