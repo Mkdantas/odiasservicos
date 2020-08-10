@@ -121,6 +121,14 @@ ul {
 	font-weight: 400;
 }
 
+.about p{
+	font-size:30px;
+	font-weight:400;
+	color: rgb(146, 146, 146);
+	font-family: 'Roboto', sans-serif;
+	line-height: 40px;
+}
+
 .section-title h2 span {
 	background: #5775b3;
 	padding: 0 3px 5px;
@@ -256,7 +264,7 @@ header{
 	height:200px;
 }
 .addresstop{
-	font-size: 15px;
+	font-size: 17px;
 	height:40px;
 	width:100%;
 	background: #379533;	
@@ -270,7 +278,7 @@ header{
 }
 
 .addressbottom{
-	font-size: 15px;
+	font-size: 17px;
 	height:40px;
 	width:100%;
 	grid-area: bottomrow;
@@ -282,6 +290,7 @@ header{
 	color: rgb(224, 224, 224);
 	font-weight: 400;
 	font-family: 'Roboto', sans-serif;
+	margin-top:10px;
 }
 
 .addressbottom span{	
@@ -297,18 +306,30 @@ header{
 
 }
 
-.social-icon {
+.addresstop .social-icons .social-icon {
 	text-decoration:none;
 	color: rgb(224, 224, 224);
-	font-size:15px;
+	font-size:17px;
 	align-items:center;
 	display:flex;
 	height:100%;
 	transition: ease-in 0.2s;
-	margin-right:20px;
+	margin-right:40px;
 	font-weight: 400;
 	font-family: 'Roboto', sans-serif;
 	
+}
+
+.addressbottom .social-icons .social-icon{
+	text-decoration:none;
+	color: rgb(224, 224, 224);
+	font-size:17px;
+	align-items:center;
+	display:flex;
+	height:100%;
+	transition: ease-in 0.2s;
+	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
 }
 .social-icons {
 	display:flex;
@@ -319,11 +340,12 @@ header{
 
 
 
+
 .header-section {
 	display:grid;
 	grid-template-areas: 
 	"toprow toprow toprow toprow toprow" 
-	"logo logo logo logo menulist"
+	"logo logo vendas menulist menulist"
 	"bottomrow bottomrow bottomrow bottomrow bottomrow"; 
 	top: 0; 
 	left: 0;
@@ -334,19 +356,58 @@ header{
 	-webkit-transition: all 0.4s ease 0s;
 	-o-transition: all 0.4s ease 0s;
 	transition: all 0.4s ease 5s;
-	height:200px;
+	height:190px;
 	
 }
 
 .header-section .logo {
 	padding-left: 8rem;
 	grid-area: logo;
-	align-items: end;
+	align-items: center;
 	display:flex;
 }
 
+.vendas{
+	grid-area:vendas;
+	width:200px;
+	align-items:center;
+	display:flex;
+	margin-left: -100px;
+
+}
+
+.vendas a{
+	text-decoration:none;
+	text-align: center;
+	font-weight:700;
+	font-size: 18px;
+	color:white;
+	background: #5c79b8;
+	border-radius: 10px 10px 10px 10px;
+	transition: 0.5s;
+}
+.vendas a:hover{
+
+	text-decoration:none;
+		text-align: center;
+		font-weight:700;
+		font-size: 18px;
+		color:white;
+		background: #379533;
+		border-radius: 10px 10px 10px 10px;
+}
+
+
+
+.simbol{
+	width:100px;
+}
+
+.logoName{
+	width:200px;
+}
+
 .header-section .logo img {
-	width: 160px;
 	-webkit-transition: all 0.4s ease 0s;
 	-o-transition: all 0.4s ease 0s;
 	transition: all 0.4s ease 0s;
@@ -374,10 +435,12 @@ header{
 	color: #5675b6;
 	position: relative;
 	font-family: "Roboto", sans-serif;
-	font-size: 16px;
-	font-weight: 700;
+	font-size: 18px;
+	font-weight: 500;
+	width:90px;
 	letter-spacing: 0.09em;
 	transition: ease 0.5s;
+	justify-content: center;
 }
 
 .header-section .menu-list li a:hover,
@@ -387,9 +450,11 @@ header{
 	color:#379533;
 	border:15px solid #5675b6;
 	border-radius:50%;
-	height:130px;
+	height:100px;
+	width:100px;
 	display:flex;
 	align-items:center;
+	justify-content: center;
 }
 
 .header-section .menu-list li:last-child a {
@@ -401,9 +466,11 @@ header{
 	color:#379533;
 	border:15px solid #5675b6;
 	border-radius:50%;
-	height:130px;
+	height:100px;
+	width:90px;
 	display:flex;
 	align-items:center;
+	justify-content: center;
 }
 
 .header-section .menu-list .current a:after {
@@ -621,7 +688,7 @@ header{
 }
 
 .testlogos{
-	height:120px;
+	height:200px;
 	width: 60px;
 }
 .test-overlay {
@@ -1642,7 +1709,7 @@ header{
 		width: 500px;
 	}
 	.testlogos{
-		height:100px;
+		height:200px;
 		width: 40px;
 	}
 }
@@ -1655,7 +1722,7 @@ header{
 		width: 400px;
 	}
 	.testlogos{
-		height:80px;
+		height:150px;
 		width: 40px;
 	}
 }
@@ -1665,8 +1732,27 @@ header{
 		right: -25px;
 	}
 
+	.vendas{
+		grid-area:vendas;
+		width:150px;
+		align-items:center;
+		display:flex;
+		margin-left: -50px;
+	
+	}
+	
+	.vendas a{
+		text-decoration:none;
+		text-align: center;
+		font-weight:500;
+		font-size: 16px;
+		color:white;
+		background: #5c79b8;
+		border-radius: 10px 10px 10px 10px;
+		transition: 0.5s;
+	}
 	.testlogos{
-		height:80px;
+		height:150px;
 		width: 40px;
 	}
 }
