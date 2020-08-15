@@ -459,6 +459,7 @@ header{
 
 .header-section .menu-list li:last-child a {
 	margin-right: 0;
+	margin-left: 15px;
 }
 
 .header-section .menu-list li.active a {
@@ -467,7 +468,7 @@ header{
 	border:15px solid #5675b6;
 	border-radius:50%;
 	height:100px;
-	width:90px;
+	width:100px;
 	display:flex;
 	align-items:center;
 	justify-content: center;
