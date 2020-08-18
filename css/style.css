@@ -1709,6 +1709,10 @@ header{
 	.test-overlay {
 		width: 500px;
 	}
+	.servicelogos{
+		height: 400px;
+		width:400px;
+	}
 	.testlogos{
 		height:200px;
 		width: 40px;
@@ -1721,6 +1725,10 @@ header{
 	}
 	.test-overlay {
 		width: 400px;
+	}
+	.servicelogos{
+		height: 400px;
+		width:400px;
 	}
 	.testlogos{
 		height:150px;
@@ -1740,6 +1748,10 @@ header{
 		display:flex;
 		margin-left: -50px;
 	
+	}
+	.servicelogos{
+		height: 300px;
+		width:300px;
 	}
 	
 	.vendas a{
@@ -1770,6 +1782,7 @@ header{
 		left: 50%;
 		margin-left: -4px;
 	}
+	
 }
 
 
@@ -1793,6 +1806,10 @@ header{
 		right: 30px;
 		padding-top: 40px;
 		
+	}
+	.servicelogos{
+		height: 340px;
+		width:340px;
 	}
 	.addresstop, .addressbottom{
 		display:none;
